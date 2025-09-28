@@ -35,8 +35,8 @@ jobs:
 
       # 5. Build Docker image
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/springboot-microservice:${{ github.sha }} .
+        run: docker build -t anurag19082000/springboot-microservice:${{ github.sha }} .
 
       # 6. Push Docker image to DockerHub
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/springboot-microservice:${{ github.sha }}
+        run: docker push anurag19082000/springboot-microservice:${{ github.sha }}
